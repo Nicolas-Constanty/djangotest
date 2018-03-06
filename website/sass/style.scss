@@ -1,0 +1,145 @@
+//===== BACKGROUND COLORS =======\\
+$color-background-1: #847AFF;
+$color-background-2: #35334A;
+$color-background-3: #535364;
+$color-background-4: #D8C9FF;
+$color-background-5: #ffffff;
+
+//===== ACCENT COLORS ===========\\
+$color-accent-green: #63BB8C;
+$color-accent-yellow: #E8D685;
+$color-accent-blue: #639DBD;
+$color-accent-red: #E88885;
+$color-accent-purple: #DB96FF;
+
+//===== LIGHT COLORS ===========\\
+$color-light-blue: #31B9FF;
+
+//=========== BODY =============\\
+body {
+  margin: 0px;
+  background: $color-background-3;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+//=========== HEADER ===========\\
+$header-height: 48px;
+#header {
+  height: $header-height;
+  width: 100%;
+  background: $color-background-3;
+  border-bottom: 2px $color-light-blue solid;
+  z-index: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+//=========== BANNER ==========\\
+#banner {
+  height: 700px;
+  width: 100%;
+  background: linear-gradient(rgba($color-background-1, 0.4), rgba($color-background-2, 0.4) 80%, rgba($color-background-2, 0.4));
+  position: absolute;
+  top: 48px;
+}
+
+.key-feature {
+  padding-top: 40px;
+  height: 440px;
+  background: $color-background-5;
+}
+
+.key-feature-image {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.50));
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#000')";
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.50));
+}
+
+
+#key-features-container {
+  position: relative;
+}
+
+div.container-fluid > div:nth-of-type(odd) {
+  padding-top: 40px;
+  height: 440px;
+  background: $color-background-3;
+}
+
+//========== LOGO =============\\
+#logo-main {
+  top: 180px;
+  position: relative;
+  margin: 0 auto;
+  -webkit-filter: drop-shadow(20px 50px 20px rgba(0,0,0,0.16));
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=20, OffY=50, Color='#000')";
+  filter: drop-shadow(20px 50px 20px rgba(0,0,0,0.16));
+  display: block;
+}
+
+#main-title {
+  font-weight: 200;
+  color: white;
+  top: 90px;
+  position: relative;
+  font-size: 40px;
+}
+
+#main-subtitle {
+  opacity: 0.4;
+  font-weight: 200;
+  color: white;
+  font-style: italic;
+  font-size: 30px;
+  top: 110px;
+  position: relative;
+}
+
+.title-yellow {
+  font-size: 24px;
+  color: $color-accent-yellow;
+  font-weight: 300;
+}
+
+.key-feature-text {
+  color: $color-background-4;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.padding-feature {
+  padding: 0 50px;
+}
+
+.feature-title {
+  color: white;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.header-space-extend {
+  height: 48px;
+}
+
+.header-button {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  color: rgba($color-background-4, .82);
+}
+
+canvas { display:block; }
+#controls {
+    width: 100%;
+    height: 700px;
+}

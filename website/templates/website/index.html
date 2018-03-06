@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/style.css' %}">
+    <script src="https://github.com/processing/p5.js/releases/download/0.6.0/p5.min.js"></script>
+</head>
+<body>
+<header id="header">
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link header-button" href="#">Downloads</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link header-button" href="#">Plugin</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link header-button" href="#">Store</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link header-button" href="#">Software</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link header-button" href="#">Docs</a>
+  </li>
+</ul>
+</header>
+<div id="header-space" style="visibility: hidden;"></div>
+<div id="controls">
+    <div style="
+    width: 100%;
+    height:  700px;
+    position: absolute;
+    background: #535364;
+    opacity:  .9;
+"></div>
+</div>
+<div id="banner">
+    <h1 id="main-title" style="text-align: center">Design Node for Artificial Intelligence</h1>
+    <h1 id="main-subtitle" style="text-align: center">The easiest way to make, share and use artificial intelligence</h1>
+    <img id="logo-main" src="{% static 'website/images/logo_dnai.png' %}">
+</div>
+<div id="key-features-container" class="container-fluid">
+        <div class="key-feature row justify-content-center">
+            <div class="col-md-12" style="text-align: center">
+                <h2 class="feature-title">Our Products</h2>
+            </div>
+        <div class="col-4 key-feature-image-container padding-feature">
+            <img class="key-feature-image" src="{% static 'website/images/plugin.jpg' %}">
+        </div>
+        <div class="col-4 padding-feature">
+            <h3 class="title-yellow">DNAI Unity Plugin</h3>
+            <p class="key-feature-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula lectus vitae odio rhoncus viverra. Suspendisse porta augue sed lacus consequat convallis. Nam id dignissim nisl. Fusce ac magna at quam lobortis vestibulum placerat in arcu. Donec nulla tellus, mollis a orci at.
+            </p>
+        </div>
+    </div>
+    <div class="key-feature row justify-content-center">
+        <div class="col-4 padding-feature">
+        </div>
+        <div class="col-4 key-feature-image-container padding-feature">
+            <img class="key-feature-image align-middle" src="{% static 'website/images/store.png' %}">
+        </div>
+    </div>
+    <div class="key-feature row justify-content-center">
+        <div class="col-4 key-feature-image-container padding-feature">
+            <img class="key-feature-image" src="{% static 'website/images/software.png' %}">
+        </div>
+        <div class="col-4 padding-feature">
+
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <script src="{% static 'website/javascripts/sticky.js' %}"></script>
+    <script src="{% static 'website/javascripts/ribbons2.js' %}"></script>
+</footer>
+</html>
